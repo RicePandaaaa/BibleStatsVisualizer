@@ -236,5 +236,3 @@ class Tokenizer:
                 token_nodes.append(book_token_node)
 
         return token_nodes
-    
-Tokenizer()
