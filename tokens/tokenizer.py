@@ -1,6 +1,6 @@
 import json
 from typing import List
-from bookTokenNode import BookTokenNode
+from tokens.bookTokenNode import BookTokenNode
 
 class Tokenizer:
     def __init__(self) -> None:
@@ -87,9 +87,6 @@ class Tokenizer:
 
         # Create the token nodes
         self.token_nodes = self.create_token_nodes()
-
-        for node in self.token_nodes:
-            print(node)
 
     def load_Bible(self) -> dict:
         """
